@@ -12,10 +12,62 @@
   </head>
 
   <body>
-   
-    <div class="container">
-    <%= yield %>
+
+  <div class="container">
+  <div class="row">
+    <div class="col-md-3 my-3">
+      <div class="nav mx-auto">
+          <div class="list-group col-md-9 mx-auto ps-5">
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="bi bi-house-fill"></i> TwitterClon
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="bi bi-house-fill"></i> Home
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="bi bi-compass-fill"></i> Explore
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="bi bi-bell-fill"></i> Notifications
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="bi bi-envelope-fill"></i> Messages
+            </a>
+          </div>
+      </div>
     </div>
+    <div class="col-md-6">
+      <div class="card">
+        <%= yield %>
+      </div>
+    </div>
+    <div class="col-md-3 my-5">
+      
+      <div class="nav mx-auto">
+          <div class="list-group col-md-9 mx-auto ps-5">
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="bi bi-house-fill"></i> TwitterClon
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="bi bi-house-fill"></i> Home
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="bi bi-compass-fill"></i> Explore
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="bi bi-bell-fill"></i> Notifications
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <i class="bi bi-envelope-fill"></i> Messages
+            </a>
+          </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
 
   
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
