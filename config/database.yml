@@ -17,7 +17,7 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  username: postgres
+  username: vitaminb
   password: 123456
   host: 127.0.0.1
   port: 5432
@@ -78,13 +78,14 @@ test:
 # URL environment variable explicitly:
 #
 #   production:
-#     url: <%= ENV["MY_APP_DATABASE_URL"] %>
+  url: <%= ENV["MY_APP_DATABASE_URL"] %>
 #
 # Read https://guides.rubyonrails.org/configuring.html#configuring-a-database
 # for a full overview on how database connection configuration can be specified.
 #
 production:
   <<: *default
+  url: <%= ENV["DATABASE_URL"] %>
   database: twitter_clon_production
-  username: twitter_clon
+  username: vitaminb
   password: <%= ENV["TWITTER_CLON_DATABASE_PASSWORD"] %>
