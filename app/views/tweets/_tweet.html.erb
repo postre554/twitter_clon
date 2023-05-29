@@ -14,8 +14,18 @@
     <%= tweet.descripcion %>
   </p>
 
-  <% random_number = rand(1..500) %>
+  <% random_number = rand(1..500).to_i %>
   <div class="" style="max-width:504px;">
     <img class="rounded-4" src="https://picsum.photos/id/<%= random_number %>/500/280" alt="Imagen aleatoria">
   </div>
+
+  <div class="" style="max-width:504px;">
+    <span class="fs-6 mx-4"><i class="fa-sharp fa-regular fa-comment-dots"></i><%= (random_number+14).to_s+"K" %></span>
+    <span class="fs-6 mx-4"><i class="fa-sharp fa-solid fa-arrows-rotate"></i><%= (random_number+39).to_s+"K" %></span>
+    <span class="fs-6 mx-4"><i class="fa-regular fa-heart"></i><%= (random_number+29).to_s+"K" %></span>
+    <span class="fs-6 mx-4"><i class="fa-sharp fa-solid fa-chart-simple"></i><%= (random_number+12).to_s+"K" %></span>
+  </div> 
+
+
+
 </div>
