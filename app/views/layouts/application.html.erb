@@ -14,31 +14,40 @@
   <body>
 
   <div class="container">
-  <div class="row">
+  <div class="row ">
+
     <div class="col-md-3 my-3">
       <div class="nav mx-auto ">
-          <div class="list-group col-md-9 mx-auto ps-6 border border-0">
-            <a href="#" class="text-primary menux list-group-item list-group-item-action">
-              <i class="fa-brands fa-twitter mx-0 fs-3 "></i> TwitterClon
-            </a>
-            <a href="#" class="menux list-group-item list-group-item-action">
-             <i class="fa-solid fa-house mx-1"></i> Home
-            </a>
-            <a href="#" class="menux list-group-item list-group-item-action">
-              <i class="fa-solid fa-magnifying-glass mx-1"></i> Explore
-            </a>
-            <a href="#" class="menux list-group-item list-group-item-action">
-              <i class="fa-solid fa-bell mx-1"></i> Notifications
-            </a>
-            <a href="#" class="menux list-group-item list-group-item-action">
-              <i class="fa-solid fa-envelope mx-1"></i> Messages
-            </a>
-            <a href="#" class="menux list-group-item list-group-item-action">
-              <i class="fa-solid fa-code mx-1"></i> Codigo Fuente
-            </a>
-          </div>
+        <div class="list-group col-md-9 mx-auto ps-6 ">
+          <a href="#" class="text-primary menux list-group-item list-group-item-action">
+            <i class="fa-brands fa-twitter mx-0 fs-3 "></i>
+            <span class="d-none d-lg-inline">TwitterClon</span>
+          </a>
+          <a href="#" class="menux list-group-item list-group-item-action">
+            <i class="fa-solid fa-house mx-1 "></i>
+            <span class="d-none d-lg-inline">Home</span>
+          </a>
+          <a href="#" class="menux list-group-item list-group-item-action">
+            <i class="fa-solid fa-magnifying-glass mx-1 "></i>
+            <span class="d-none d-lg-inline">Explore</span>
+          </a>
+          <a href="#" class="menux list-group-item list-group-item-action">
+            <i class="fa-solid fa-bell mx-1 "></i>
+            <span class="d-none d-lg-inline">Notifications</span>
+          </a>
+          <a href="#" class="menux list-group-item list-group-item-action">
+            <i class="fa-solid fa-envelope mx-1 "></i>
+            <span class="d-none d-lg-inline">Messages</span>
+          </a>
+          <a href="#" class="menux list-group-item list-group-item-action">
+            <i class="fa-solid fa-code mx-1 "></i>
+            <span class="d-none d-lg-inline">Codigo Fuente</span>
+          </a>
+        </div>
       </div>
     </div>
+
+
     <div class="col-md-6">
       <div class="card">
         <%= yield %>

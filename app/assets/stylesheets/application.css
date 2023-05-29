@@ -20,3 +20,19 @@
 .pagy-nav pagination{
     letter-spacing:2px;
 }
+
+.page a{
+    letter-spacing:4px;
+}
+
+.page.next a {
+    letter-spacing: 0; 
+    color: red; 
+  }
+.page.prev.disabled{
+    margin-right:4px;
+}
+
+.page.active {
+    margin-right:4px;
+}

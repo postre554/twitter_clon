@@ -1,8 +1,11 @@
 <div id="<%= dom_id tweet %>">
-
+  
+  <% random_number = rand(1..500) %>
   <p>
-    <strong>Usuario:</strong>
-    <%= tweet.usuario %>
+    <span class="">
+    <img class="rounded-circle border border-2" src="https://picsum.photos/id/<%= random_number %>/48/48" alt="Imagen aleatoria">
+    </span>
+    <%= "@"+tweet.usuario %>
   </p>
 
 
@@ -11,6 +14,8 @@
     <%= tweet.descripcion %>
   </p>
 
-
-
+  <% random_number = rand(1..500) %>
+  <div class="" style="max-width:504px;">
+    <img class="rounded-4" src="https://picsum.photos/id/<%= random_number %>/500/280" alt="Imagen aleatoria">
+  </div>
 </div>
