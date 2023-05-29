@@ -16,3 +16,7 @@
 .menux{
     font-size:20px;
 }
+
+.pagy-nav pagination{
+    letter-spacing:2px;
+}
