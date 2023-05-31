@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     }
 
-    cambiarTextoEnlace(pageNext, "Siguiente");
+    cambiarTextoEnlace(pageNext, "Ver Mas");
 
     cambiarTextoEnlace(pagePrev, "Anterior");
   });

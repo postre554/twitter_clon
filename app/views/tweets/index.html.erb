@@ -1,6 +1,27 @@
 <p style="color: green"><%= notice %></p>
 
-<h4><b>Tweets</b></h4>
+
+<div class="d-flex align-items-center col-9 mb-4">
+  <h4 class="me-3"><b>Tweets</b></h4> 
+
+  <span class="ml-auto col-12">
+
+
+  <%= form_with url: tweets_path, method: :get do |form|%>
+    <%= form.text_field :query_text, placeholder: ('escribe tu busqueda'), value: params[:query_text]%>
+  <%end%>
+
+
+
+  </span>
+</div>
+
+
+
+
+
+
+
 
 <div id="tweets">
   <% @tweets.each do |tweet| %>
