@@ -6,12 +6,10 @@
 
   <span class="ml-auto col-12">
 
-
-  <%= form_with url: tweets_path, method: :get do |form|%>
-    <%= form.text_field :query_text, placeholder: ('search no funciona'), value: params[:query_text]%>
-  <%end%>
-
-
+   <%= form_with url: "/search", method: :get, html: {class: "form-inline my-2 my-lg-0 border border-2 d-flex"} do |form| %>
+      <%= form.text_field :query_text, placeholder: 'Search sin gema, ingresar ej: Nirvana', class: 'form-control mr-sm-2', name:  'q' %>
+      <%= form.submit 'Search', class: 'btn btn-inline-success my-2 my-sm-0' %>
+   <% end %>
 
   </span>
 </div>
